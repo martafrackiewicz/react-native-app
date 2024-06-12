@@ -1,6 +1,22 @@
-import { Stack } from 'expo-router';
+import { SplashScreen, Stack } from 'expo-router';
+import { useFonts } from 'expo-font';
+import { useEffect } from 'react';
+
+SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
+  const [fontsLoaded, fontError] = useFonts({
+    'SpaceMono-Regular': require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'Lato-Regular': require('../assets/fonts/Lato-Regular.ttf'),
+  });
+
+  useEffect(() => {
+    if (fontError) throw fontError;
+    if (fontsLoaded) SplashScreen.hideAsync();
+  }, [fontsLoaded, fontError]);
+
+  if (!fontsLoaded && !fontError) return null;
+
   return (
     <Stack
       screenOptions={{

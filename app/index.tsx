@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { Link } from 'expo-router';
 import { Text, View } from 'react-native';
 
@@ -21,11 +20,15 @@ export default function Index() {
           alignSelf: 'auto',
           width: '30%',
           textAlign: 'center',
-          margin: 10,
+          margin: 16,
         }}>
         Test link
       </Link>
-      <Text className="text-red-500 m-[10px]">NativeWind test</Text>
+      <View className="m-4">
+        <Text className="text-red-500">NativeWind test</Text>
+        <Text className="text-xl font-spacemono">Space Mono font test</Text>
+        <Text className="text-xl font-lato">Lato font test</Text>
+      </View>
     </View>
   );
 }
