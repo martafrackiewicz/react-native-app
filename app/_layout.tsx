@@ -8,6 +8,7 @@ export default function RootLayout() {
   const [fontsLoaded, fontError] = useFonts({
     'SpaceMono-Regular': require('../assets/fonts/SpaceMono-Regular.ttf'),
     'Lato-Regular': require('../assets/fonts/Lato-Regular.ttf'),
+    'Lato-Bold': require('../assets/fonts/Lato-Bold.ttf'),
   });
 
   useEffect(() => {
@@ -32,7 +33,7 @@ export default function RootLayout() {
       <Stack.Screen
         name="index"
         options={{
-          title: 'ToDo list',
+          title: 'Home',
         }}
       />
       <Stack.Screen

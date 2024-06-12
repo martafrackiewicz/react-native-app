@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         spacemono: ['SpaceMono-Regular', 'sans-serif'],
         lato: ['Lato-Regular', 'sans-serif'],
+        'lato-bold': ['Lato-Bold', 'sans-serif'],
       },
     },
   },
