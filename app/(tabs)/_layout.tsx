@@ -1,4 +1,5 @@
 import { Tabs } from 'expo-router';
+import { Image } from 'react-native';
 
 export default function Index() {
   return (
@@ -16,6 +17,12 @@ export default function Index() {
           options={{
             title: 'ToDo List',
             headerShown: false,
+            tabBarIcon: () => (
+              <Image source={require('../../assets/images/list.png')} className="w-5 h-5" />
+            ),
+            // tabBarIcon: () => (
+            //   <Image source={require('../../assets/images/picture.svg')} className="w-5 h-5" />
+            // ),
             //   tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
           }}
         />
