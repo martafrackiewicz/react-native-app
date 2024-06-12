@@ -1,3 +1,4 @@
+import { StatusBar } from 'expo-status-bar';
 import { Link } from 'expo-router';
 import { Text, View } from 'react-native';
 
