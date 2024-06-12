@@ -24,7 +24,7 @@ export default function Index() {
         }}>
         Test link
       </Link>
-      <Text style={{ alignSelf: 'center' }}>tu bedzie todo lista</Text>
+      <Text className="text-red-500 m-[10px]">NativeWind test</Text>
     </View>
   );
 }
